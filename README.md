@@ -11,3 +11,6 @@ A personal website created for my 21st birthday, featuring an agenda, gift ideas
 - HTML
 - CSS
 - JavaScript
+
+## Check Out My Site!
+https://m4lach1-birthday-site.netlify.app/
