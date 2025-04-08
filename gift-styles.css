@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'quiche-sans-regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #030114, #08042d);
+    color:#C8ACD6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #3533CD;
+    color: #17153B;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.responsive-banner {
+    width: 80%; 
+    height: auto; 
+    object-fit: contain;
+    transition: transform 0.8s ease-in-out; 
+}
+
+nav {
+    background: #17153B;
+    color: white;
+    font-family:'tan-pearl', sans-serif;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Gift Grid */
+.gift-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gift-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gift-item:hover {
+    transform: translateY(-5px);
+}
+
+.gift-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gift-item h2 {
+    font-family: 'tan-pearl', sans-serif;
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #5d3c47;
+}
+
+.gift-item p {
+    font-family: 'quiche-sans-regular', sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #08042d;
+    margin-top: 20px;
+}
+
+/* Importing Custom Fonts */
+@font-face {
+    font-family: 'quiche-sans-regular';
+    src: url('fonts/quiche-sans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tan-pearl';
+    src: url('fonts/tan-pearl.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    header img {
+        height: 200px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
